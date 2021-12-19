@@ -16,6 +16,7 @@ fpsClock = pygame.time.Clock()
 # setting up controls formatted
 controls = []
 # +/- control speed, in intervals of 10
+# DOESNT USE THIS, CHANGE LATER
 controls.append(pygame.K_PLUS) # 0
 controls.append(pygame.K_MINUS) # 1
 
@@ -68,6 +69,7 @@ def update_screen():
     # stuff every frame
     keys = pygame.key.get_pressed()
 
+    # set speeds in intervals of 10
     if keys[pygame.K_0]:
         speed = 100
     elif keys[pygame.K_1]:
