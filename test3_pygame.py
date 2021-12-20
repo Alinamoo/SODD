@@ -150,11 +150,13 @@ def update_screen():
     img = font.render(f"yaw_vel: {yaw_vel}", True, (0,0,0))
     screen.blit(img, (120 * (4), 20))
     img = font.render(f"bat: {tello.get_battery()}", True, (0,0,0))
-    screen.blit(img, (120 * (5), 20))
+    screen.blit(img, (120 * (1), 60))
     img = font.render(f"flying: {flying}", True, (0,0,0))
-    screen.blit(img, (120 * (6), 20))
+    screen.blit(img, (120 * (2), 60))
     img = font.render(f"speed: {speed}", True, (0,0,0))
-    screen.blit(img, (120 * (7), 20))
+    screen.blit(img, (120 * (3), 60))
+    img = font.render(f"mid: {tello.get_mission_pad_id()}", True, (0,0,0))
+    screen.blit(img, (120 * (4), 60))
 
     if flying:
         #if x_vel or y_vel or z_vel or yaw_vel:
