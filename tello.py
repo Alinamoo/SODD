@@ -116,7 +116,7 @@ class TelloManager(object):
         """
         infos = self.get_subnets()
         ips = SubnetInfo.flatten([info.get_ips() for info in infos])
-        ips = list(filter(lambda ip: ip.startswith('192.168.175.'), ips)) # might need to change filter depending on ips
+        ips = list(filter(lambda ip: ip.startswith('192.168.'), ips)) # might need to change filter depending on ips
         return ips
 
     def get_subnets(self):
