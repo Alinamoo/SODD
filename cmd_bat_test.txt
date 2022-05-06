@@ -1,0 +1,6 @@
+scan 2
+battery_check 20
+correct_ip
+1=0TQ3HAM0HSX095
+2=0TQ3HAE0HSX049
+sync 1
