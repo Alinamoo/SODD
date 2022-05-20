@@ -7,6 +7,21 @@ import time
 import os
 import binascii
 from contextlib import suppress
+import serial
+import time
+
+arduino = serial.Serial(port='COM14', baudrate=9600, timeout=0.05)
+
+def write_commands(data='ok', reply_expected=False):
+    reply = []
+
+    arduino.write(data)
+    time.sleep(0.05)
+    if reply_expected:
+        reply_len = arduino.read(1)
+
+        reply = arduino.read(reply_len)
+    return reply
 
 class SwarmUtil(object):
     """
@@ -261,7 +276,7 @@ class Swarm(object):
             t = Thread(target=SwarmUtil.drone_handler, args=(tello, pool))
             t.daemon = True
             t.start()
-
+            write_commands(x)
             print(f'[SCAN] IP = {tello.tello_ip}, ID = {x}')
 
     def _handle_gte(self, command):
