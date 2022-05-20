@@ -1,0 +1,9 @@
+scan 1
+battery_check 20
+1=0TQ3GCD00SZ210
+*>takeoff
+1>up 100
+1>right 100
+1>down 100
+1>left 100
+*>land

@@ -1,0 +1,15 @@
+scan 4
+1=0TQ3GCD00SZ210
+2=0TQ3HAM0HSX095
+3=0TQZGANED0023H
+4=0TQ3HAE0HSX049
+*>takeoff
+1>cw 100
+2>ccw 100
+3>cw 100
+4>ccw 100
+1>ccw 100
+2>cw 100
+3>ccw 100
+4>cw 100
+*>land

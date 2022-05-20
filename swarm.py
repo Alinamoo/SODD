@@ -140,15 +140,15 @@ class Swarm(object):
         self.pools = []
         self.sn2ip = {
             '0TQ3GCD00SZ210': '192.168.63.192', # ips need to be updated ****************************************
-            '0TQ3HAE0HSX049': '192.168.175.218',
+            '0TQ3HAM0HSX095': '192.168.175.218',
             '0TQZGANED0023H': '192.168.3.104',
-            '0TQ3HAM0HSX095': '192.168.175.48'
+            '0TQ3HAE0HSX049': '192.168.175.48'
         }
         self.id2sn = {
             0: '0TQ3GCD00SZ210',
-            1: '0TQ3HAE0HSX049',
+            1: '0TQ3HAM0HSX095',
             2: '0TQZGANED0023H',
-            3: '0TQ3HAM0HSX095'
+            3: '0TQ3HAE0HSX049'
         }
         self.ip2id = {
             '192.168.63.192': 0,
