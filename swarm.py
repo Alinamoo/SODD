@@ -1,3 +1,5 @@
+# modified from https://tello.oneoffcoder.com/swarm.html
+
 import sys
 import time
 from tello import *

@@ -1,3 +1,5 @@
+# modified from https://tello.oneoffcoder.com/swarm.html
+
 import threading
 from threading import Thread
 import socket
